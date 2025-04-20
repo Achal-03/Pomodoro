@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        
+        <div class="timer-display">25:00</div>
+        
+        <div class="control-buttons">
+            <button class="control-btn start-btn">Start</button>
+            <button class="control-btn pause-btn" disabled>Pause</button>
+            <button class="control-btn stop-btn" disabled>Stop</button>
+            <button class="control-btn reset-btn">Reset</button>
+        </div>
+        
+        <div class="mode-buttons">
+            <button class="mode-btn pomodoro active" data-time="25">Pomodoro</button>
+            <button class="mode-btn short-break" data-time="5">Short Break</button>
+            <button class="mode-btn long-break" data-time="15">Long Break</button>
+        </div>
+        
+    </div>
+
+    <audio id="alert-sound" src="https://cdnjs.cloudflare.com/ajax/libs/ion-sound/3.0.7/sounds/bell_ring.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
